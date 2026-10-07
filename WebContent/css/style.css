@@ -1,0 +1,83 @@
+/* PawPulse – Pet-themed styles */
+:root {
+  --paw-blue: #4a90a4;
+  --paw-green: #5a9b6e;
+  --paw-cream: #f8f4e8;
+  --paw-brown: #8b6914;
+  --paw-soft: #e8f4f0;
+  --paw-dark: #2c3e50;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--paw-cream) 0%, var(--paw-soft) 100%);
+  color: var(--paw-dark);
+  min-height: 100vh;
+  margin: 0;
+}
+.navbar-paw {
+  background: linear-gradient(90deg, var(--paw-blue), var(--paw-green)) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.navbar-paw .navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+}
+.navbar-paw .nav-link {
+  color: rgba(255,255,255,0.95) !important;
+  font-weight: 500;
+}
+.navbar-paw .nav-link:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+.paw-icon {
+  font-size: 1.4rem;
+  margin-right: 0.3rem;
+}
+.card-pet {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+.card-pet:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.card-pet .card-header {
+  background: linear-gradient(90deg, var(--paw-blue), var(--paw-green));
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+  font-weight: 600;
+}
+.btn-paw {
+  background: linear-gradient(90deg, var(--paw-blue), var(--paw-green));
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+.btn-paw:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+.table-health th {
+  background: var(--paw-soft);
+  color: var(--paw-dark);
+  font-weight: 600;
+}
+.reminder-urgent { border-left: 4px solid #c0392b; }
+.reminder-due   { border-left: 4px solid var(--paw-brown); }
+.footer-paw {
+  background: var(--paw-dark);
+  color: #bdc3c7;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.suggestion-box {
+  background: #e8f4f0;
+  border-left: 4px solid var(--paw-green);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  white-space: pre-line;
+}
